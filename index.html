@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Siva Krishna Tummalapalli | Electromagnetic Engineer</title>
+  <title>Electromagnetics Unfolded</title>
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -11,12 +11,16 @@
       padding: 0;
       background-color: #ffffff;
       color: #333;
-      line-height: 1.6;
+      line-height: 1.7;
     }
     nav {
       text-align: center;
       padding: 25px 0;
       border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      background: white;
+      z-index: 100;
     }
     nav a {
       margin: 0 18px;
@@ -27,34 +31,84 @@
     }
     nav a:hover { color: #1a73e8; }
 
+    /* Home Section */
     .hero {
       text-align: center;
       padding: 90px 20px 70px;
+      max-width: 900px;
+      margin: 0 auto;
     }
     .profile-pic {
       width: 140px;
       height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 25px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
     h1 {
-      font-size: 3.5rem;
-      margin: 10px 0 8px;
+      font-size: 3.2rem;
       color: #1a73e8;
-      font-weight: 600;
+      margin: 15px 0 10px;
     }
     .subtitle {
       font-size: 1.5rem;
       color: #555;
       margin-bottom: 40px;
     }
-    .contact-info p {
-      margin: 14px 0;
-      font-size: 1.1rem;
+    .intro-text {
+      font-size: 1.15rem;
+      max-width: 780px;
+      margin: 0 auto 40px;
+      text-align: center;
+      line-height: 1.8;
     }
+
+    /* Common Section Style */
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    section h2 {
+      text-align: center;
+      color: #1a73e8;
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+    }
+
+    /* About Section */
+    .about-text {
+      font-size: 1.15rem;
+      line-height: 1.9;
+      text-align: justify;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Projects & Research Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #f9f9f9;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h3 {
+      color: #1a73e8;
+      margin-bottom: 12px;
+    }
+
     .buttons {
+      text-align: center;
       margin: 50px 0;
     }
     .btn {
@@ -66,68 +120,101 @@
       cursor: pointer;
       text-decoration: none;
       display: inline-block;
-      transition: all 0.3s;
     }
-    .btn-primary {
-      background-color: #1a73e8;
-      color: white;
-    }
-    .btn-primary:hover {
-      background-color: #1557b0;
-    }
-    .btn-secondary {
-      background-color: #333;
-      color: white;
-    }
-    .btn-secondary:hover {
-      background-color: #222;
-    }
-    .social-icons {
-      margin-top: 70px;
-    }
-    .social-icons a {
-      margin: 0 16px;
-      font-size: 1.9rem;
-      color: #555;
-      text-decoration: none;
-    }
-    .social-icons a:hover {
-      color: #1a73e8;
-    }
+    .btn-primary { background-color: #1a73e8; color: white; }
+    .btn-secondary { background-color: #333; color: white; }
   </style>
 </head>
 <body>
 
   <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Projects</a>
-    <a href="#">Research</a>
-    <a href="#">Contact</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <div class="hero">
+  <!-- Home Section -->
+  <div class="hero" id="home">
     <img src="profile.jpg" alt="Siva Krishna Tummalapalli" class="profile-pic">
+    <h1>Electromagnetics Unfolded</h1>
+    <p class="subtitle">Siva Krishna Tummalapalli</p>
     
-    <h1>Siva Krishna Tummalapalli</h1>
-    <p class="subtitle">Electromagnetic Engineer</p>
-    
-    <div class="contact-info">
-      <p>📍 Hyderabad, India</p>
-      <p>✉️ sivakrishna.tummalapalli77@gmail.com</p>
-      <p>📞 +91 9390007317</p>
+    <div class="intro-text">
+      <p>I am an Electromagnetic Engineer with strong hands-on experience in designing and developing solenoids, electric motors, and generators.</p>
+      <p>My work focuses on the practical application of electromagnetic fields, magnetic circuits, and energy conversion systems.</p>
+      <p>Through this portfolio, I showcase my research, technical projects, and real-world implementations in electromagnetics.</p>
+      <p>Passionate about transforming theoretical concepts into working prototypes, I draw inspiration from ancient cosmic energies like <strong>Shakti</strong> and <strong>Vajra</strong>.</p>
+      <p>Explore my journey in unfolding the power of electromagnetic waves and fields.</p>
     </div>
 
     <div class="buttons">
       <a href="#projects" class="btn btn-primary">View My Projects</a>
       <a href="#contact" class="btn btn-secondary">Get In Touch</a>
     </div>
-
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/siva-krishna-tummalapalli-245267237" target="_blank">in</a>
-      <a href="https://github.com/21bq5a0219" target="_blank">GitHub</a>
-    </div>
   </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-text">
+      <p>I am an Electromagnetic Engineer passionate about the design and development of electromagnetic devices. 
+      With hands-on experience in solenoids, electric motors, and generators, I specialize in translating complex 
+      electromagnetic theory into practical, working systems.</p>
+      <p>My expertise lies in magnetic circuit analysis, electromagnetic field simulation, and energy conversion technologies. 
+      I strongly believe in bridging the gap between academic knowledge and real-world engineering applications.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" style="background-color: #f9f9f9;">
+    <h2>My Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Solenoid Actuator Design</h3>
+        <p>Designed and prototyped a high-force linear solenoid with optimized magnetic core for industrial automation applications.</p>
+      </div>
+      <div class="card">
+        <h3>Brushless DC Motor Development</h3>
+        <p>Developed a custom BLDC motor with improved efficiency and thermal management for electric vehicle applications.</p>
+      </div>
+      <div class="card">
+        <h3>Electromagnetic Generator Prototype</h3>
+        <p>Built a small-scale axial flux generator for renewable energy harvesting with focus on high power density.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research">
+    <h2>Research & Publications</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Electromagnetic Field Analysis in Solenoids</h3>
+        <p>Study on magnetic flux distribution and force optimization using Finite Element Method (FEM).</p>
+      </div>
+      <div class="card">
+        <h3>Energy Efficiency in Electric Motors</h3>
+        <p>Comparative analysis of different motor topologies for reduced losses and improved performance.</p>
+      </div>
+      <div class="card">
+        <h3>Inspiration from Ancient Energy Concepts</h3>
+        <p>Exploring parallels between modern electromagnetic theory and ancient concepts of Shakti and Vajra.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="background-color: #f9f9f9; text-align: center;">
+    <h2>Get In Touch</h2>
+    <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px;">
+      Feel free to reach out if you'd like to collaborate or discuss electromagnetic engineering projects.
+    </p>
+    <p><strong>📍 Hyderabad, India</strong></p>
+    <p><strong>✉️ sivakrishna.tummalapalli77@gmail.com</strong></p>
+    <p><strong>📞 +91 9390007317</strong></p>
+  </section>
 
 </body>
 </html>
