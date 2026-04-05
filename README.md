@@ -1,2 +1,2 @@
 # electromagnetics-unfolded
-I this i want to showcase my work and findings in the field of electromagnetics.
+I this i want to showcase my work and findings in the field of electromagnetics. I am an Electromagnetic Engineer with strong hands-on experience in designing and developing solenoids, electric motors, and generators. My work focuses on the practical application of electromagnetic fields, magnetic circuits, and energy conversion systems. Through this portfolio, I showcase my research, technical projects, and real-world implementations in electromagnetics. Passionate about transforming theoretical concepts into working prototypes.Explore my journey in unfolding the power of electromagnetic waves and fields.
